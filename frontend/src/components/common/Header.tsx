@@ -9,8 +9,8 @@ export default function Header() {
   return (
     <>
       <NavBar>
-          <Link to="/" className="logo_anchor" style={{ width : '110px' }}>
-              <img src={logo} alt="logo" style={{ width : '100%' }}/>
+          <Link to="/" style={{ width : '110px' }}>
+              <LogoImg src={logo} alt="logo" />
           </Link>
           <ItemList>
             <Item>
@@ -29,12 +29,8 @@ export default function Header() {
 }
 
 const NavBar = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
-
-  width : 1200px;
   height : 60px;
   line-height : 60px;
-  margin : 0 auto;
   font-family: "Pangolin", sans-serif;
   display : flex;
   position : static;
@@ -44,6 +40,11 @@ const NavBar = styled.div`
   background : rgb(144, 202, 249);
 `;
 
+const LogoImg = styled.img`
+  width : 80%;
+  padding : 10px;
+`
+
 const ItemList = styled.div`
   display : flex;
   width : 300px;
@@ -52,8 +53,6 @@ const ItemList = styled.div`
 
 const Item = styled.div`
   & > a {
-    list-style : none;
-    text-decoration : none;
     color : white;
   }
 `
