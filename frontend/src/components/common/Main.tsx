@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import mainImg from '../assets/img/searching.png';
-import mainImg2 from '../assets/img/rank.png'
+import mainImg from '../../assets/img/searching.png';
+import mainImg2 from '../../assets/img/rank.png'
  
 export default function Main() {
   return (
     <>
       <Wrapper>
         <LeftBox>
-          {/* <MainImg src={mainImg} alt="main" /> */}
+          <MainImg src={mainImg} alt="main" />
         </LeftBox>
         <RightBox>
           <div>123</div>
@@ -22,7 +22,7 @@ export default function Main() {
           <div>가나다라마바사</div>
         </LeftBox>
         <RightBox>
-          {/* <MainImg2 src={mainImg2} alt="main2" /> */}
+          <MainImg2 src={mainImg2} alt="main2" />
         </RightBox>
       </Wrapper>
     </>

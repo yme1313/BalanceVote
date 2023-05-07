@@ -41,8 +41,9 @@ const NavBar = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width : 80%;
-  padding : 10px;
+  width : 40%;
+  padding : 5px;
+  padding-left : 20px;
 `
 
 const ItemList = styled.div`
