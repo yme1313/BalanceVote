@@ -18,7 +18,6 @@ export default function Footer() {
 }
 
 const Wrapper = styled.div`
-  width: 100%;
   height: 40px;
   line-height : 40px;
   padding: 10px 20px;

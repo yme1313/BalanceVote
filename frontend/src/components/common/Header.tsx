@@ -14,13 +14,13 @@ export default function Header() {
           </Link>
           <ItemList>
             <Item>
-              <Link to='/notice'>Notice</Link>
+              <Link to='/vote'>VOTE</Link>
             </Item>
             <Item>
-              <Link to='/vote'>Vote</Link>
+              <Link to='/stats'>STATS</Link>
             </Item>
             <Item>
-              <Link to='/login'>Login</Link>
+              <Link to='/login'>LOGIN</Link>
             </Item>   
           </ItemList>
       </NavBar>
@@ -31,7 +31,6 @@ export default function Header() {
 const NavBar = styled.div`
   height : 60px;
   line-height : 60px;
-  font-family: "Pangolin", sans-serif;
   display : flex;
   position : static;
   justify-content: space-between;

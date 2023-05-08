@@ -1,23 +1,24 @@
 import React from 'react';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Routes, Route } from 'react-router-dom';
-import "./App.css";
+import GlobalStyle from './styles/GlobalStyles';
 
 import Default from './layout/Default';
-import Home from './pages/Home';
-import Notice from './pages/Notice';
-import Vote from './pages/Vote';
-import Login from './pages/Login';
+import HomePage from './pages/HomePage';
+import VotePage from './pages/VotePage';
+import StatsPage from './pages/StatsPage';
+import LoginPage from './pages/LoginPage';
 
 export default function App() {
   return (
     <>
+      <GlobalStyle />
       <Routes>
         <Route path="" element={<Default />}>
-          <Route path='/' element={<Home />} />
-          <Route path='/notice' element={<Notice />} />
-          <Route path='/vote' element={<Vote />} />
-          <Route path='/login' element={<Login />} />
+          <Route path='/' element={<HomePage />} />
+          <Route path='/vote' element={<VotePage />} />
+          <Route path='/stats' element={<StatsPage />} />
+          <Route path='/login' element={<LoginPage />} />
         </Route>
       </Routes>
       <ReactQueryDevtools initialIsOpen={true} />
